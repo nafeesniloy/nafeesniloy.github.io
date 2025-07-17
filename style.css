@@ -1,0 +1,245 @@
+/* ===== Global Reset ===== */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  background-color: #f8f9fa;
+  color: #333;
+  line-height: 1.6;
+}
+
+/* ===== Navigation ===== */
+nav {
+  background-color: #1e1e2f;
+  color: #fff;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 40px;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+}
+
+nav h2 {
+  font-size: 24px;
+}
+
+nav ul {
+  display: flex;
+  list-style: none;
+}
+
+nav ul li {
+  margin-left: 20px;
+}
+
+nav ul li a {
+  text-decoration: none;
+  color: #fff;
+  font-weight: 500;
+  transition: color 0.3s ease;
+}
+
+nav ul li a:hover {
+  color: #ffd700;
+}
+
+/* ===== Hero Section ===== */
+#home {
+  background-color: #007bff;
+  color: white;
+  text-align: center;
+  padding: 100px 20px;
+}
+
+#home h1 {
+  font-size: 2.8rem;
+  margin-bottom: 10px;
+}
+
+#home span {
+  color: #ffd700;
+}
+
+#home p {
+  font-size: 1.2rem;
+  margin-bottom: 30px;
+}
+
+.btn, .btn-outline {
+  padding: 10px 22px;
+  border-radius: 5px;
+  font-weight: 600;
+  text-decoration: none;
+  margin: 5px;
+  display: inline-block;
+  transition: 0.3s ease;
+}
+
+.btn {
+  background: #fff;
+  color: #007bff;
+}
+
+.btn:hover {
+  opacity: 0.85;
+}
+
+.btn-outline {
+  border: 2px solid #fff;
+  background: transparent;
+  color: #fff;
+}
+
+.btn-outline:hover {
+  background: #fff;
+  color: #007bff;
+}
+
+/* ===== Sections ===== */
+section {
+  padding: 60px 30px;
+  max-width: 1100px;
+  margin: auto;
+}
+
+section h2 {
+  font-size: 2.2rem;
+  text-align: center;
+  margin-bottom: 30px;
+  color: #1e1e2f;
+}
+
+/* ===== About Section ===== */
+.about-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 30px;
+  align-items: flex-start;
+  justify-content: center;
+}
+
+.profile-img {
+  width: 220px;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.about-text {
+  flex: 1;
+  min-width: 280px;
+}
+
+.about-text h3 {
+  margin-top: 20px;
+  font-size: 1.2rem;
+  color: #007bff;
+}
+
+.about-text ul {
+  list-style: disc inside;
+  margin-top: 10px;
+  padding-left: 0;
+}
+
+/* ===== Projects ===== */
+.projects-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 20px;
+}
+
+.project {
+  background: #ffffff;
+  padding: 20px;
+  border-radius: 8px;
+  border: 1px solid #ddd;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+}
+
+.project h3 {
+  color: #007bff;
+  margin-bottom: 10px;
+}
+
+.project p {
+  font-size: 0.95rem;
+  color: #555;
+}
+
+/* ===== Certifications ===== */
+#certifications p {
+  text-align: center;
+  font-weight: 500;
+  font-size: 1.1rem;
+  color: #444;
+}
+
+/* ===== Contact ===== */
+#contact a {
+  color: #007bff;
+  text-decoration: none;
+  font-weight: 500;
+}
+
+#contact a:hover {
+  text-decoration: underline;
+}
+
+#contact p {
+  font-size: 1rem;
+  text-align: center;
+  margin: 8px 0;
+}
+
+/* ===== Footer ===== */
+footer {
+  background-color: #1e1e2f;
+  color: white;
+  padding: 20px 0;
+  text-align: center;
+  font-size: 0.9rem;
+}
+
+/* ===== Scroll Animation ===== */
+.reveal {
+  opacity: 0;
+  transform: translateY(40px);
+  transition: all 0.8s ease;
+}
+.reveal.active {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* ===== Responsive ===== */
+@media (max-width: 768px) {
+  nav {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  nav ul {
+    flex-wrap: wrap;
+    justify-content: center;
+    padding-top: 10px;
+  }
+
+  #home h1 {
+    font-size: 2rem;
+  }
+
+  .about-container {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .profile-img {
+    width: 160px;
+  }
+}
