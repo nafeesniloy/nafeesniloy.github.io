@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>S.M. Nafees Hossain Niloy – Portfolio</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <!-- ===== Navbar ===== -->
+  <nav>
+    <h2>Nafees Niloy</h2>
+    <ul>
+      <li><a href="#home">Home</a></li>
+      <li><a href="#about">About</a></li>
+      <li><a href="#projects">Projects</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+  </nav>
+
+  <!-- ===== Hero Section ===== -->
+  <section id="home" class="reveal">
+    <h1>Hello, I’m <span>S.M. Nafees Hossain Niloy</span></h1>
+    <p>CSE Student | Software & Web Developer | Problem Solver</p>
+    <a href="#contact" class="btn">Hire Me</a>
+    <a href="cv/Nafees_Intern_CV.pdf" download class="btn-outline">Download CV</a>
+    </section>
+
+  <!-- ===== About Section ===== -->
+  <section id="about" class="reveal">
+    <h2>About Me</h2>
+    <div class="about-container">
+      <img src="image/Profile.jpg" alt="Profile Picture" class="profile-img" />
+      <div class="about-text">
+        <p>Motivated and detail-oriented Computer Science and Engineering student at AIUB. Passionate about software & Web development, problem-solving, and continuous learning.</p>
+        <h3>Education</h3>
+        <p><strong>B.Sc. in CSE</strong><br>American International University – Bangladesh (AIUB)<br>May 2022 – Present</p>
+
+        <ul>
+          <li>C++, Java, C#, PHP, Python, kotlin</li>
+          <li>HTML, CSS, JavaScript, MySQL, Oracle</li>
+          <li>Git & GitHub, VS Code, XAMPP, Anaconda, Android Studio</li>
+        </ul>
+        <h3>Soft Skills</h3>
+        <ul>
+          <li>Problem-solving</li>
+          <li>Team collaboration</li>
+          <li>Time management</li>
+          <li>Fast learner</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== Projects Section ===== -->
+  <section id="projects" class="reveal">
+    <h2>Projects</h2>
+    <div class="projects-grid">
+      <div class="project">
+        <h3>Bookshop Management System</h3>
+        <p>PHP, MySQL, HTML, CSS, JavaScript – Customer login, record management, payment integration.</p>
+      </div>
+      <div class="project">
+        <h3>Smart City (Graphics Design)</h3>
+        <p>Created a user-friendly infographic layout for smart city concepts and interfaces.</p>
+      </div>
+      <div class="project">
+        <h3>Child Adoption System (C#)</h3>
+        <p>Desktop app for managing child adoption records with workflows and data reports.</p>
+      </div>
+      <div class="project">
+        <h3>Travel Agency Management</h3>
+        <p>Comprehensive booking and invoice system for managing travel packages and customers.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== Certifications ===== -->
+  <section id="certifications" class="reveal">
+    <h2>Certifications</h2>
+    <p>✅ IT Essentials – Cisco Networking Academy – Issued August 2022</p>
+  </section>
+
+  <!-- ===== Contact Section ===== -->
+  <section id="contact" class="reveal">
+    <h2>Contact Me</h2>
+    <p>Email: <a href="mailto:nafeeshossainniloy@gmail.com">nafeeshossainniloy@gmail.com</a></p>
+    <p>Phone: +8801983120786</p>
+    <p>
+      <a href="https://linkedin.com/in/nafees-hossain-niloy" target="_blank">LinkedIn</a> |
+      <a href="https://github.com/nafeesniloy" target="_blank">GitHub</a>
+    </p>
+  </section>
+
+  <!-- ===== Footer ===== -->
+  <footer>
+    <p>&copy; 2025 S.M. Nafees Hossain Niloy. All rights reserved.</p>
+  </footer>
+
+  <!-- ===== Scroll Animation Script ===== -->
+  <script>
+    const revealElements = document.querySelectorAll('.reveal');
+    window.addEventListener('scroll', () => {
+      const windowHeight = window.innerHeight;
+      revealElements.forEach(el => {
+        const elementTop = el.getBoundingClientRect().top;
+        if (elementTop < windowHeight - 100) {
+          el.classList.add('active');
+        }
+      });
+    });
+  </script>
+
+</body>
+</html>
